@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetim Paneli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Yönetim Paneli</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Menü Ekle</h2>
+            <form id="menuForm">
+                <label for="cafeName">Kafe Adı:</label>
+                <input type="text" id="cafeName" name="cafeName" required>
+                
+                <label for="menuItems">Menü Öğeleri (virgülle ayrılmış):</label>
+                <input type="text" id="menuItems" name="menuItems" required>
+                
+                <button type="submit">QR Kodu Oluştur</button>
+            </form>
+            <div id="qrcodes"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 QR Menü Sistemi</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
